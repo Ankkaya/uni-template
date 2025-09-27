@@ -2,7 +2,7 @@
   <view class="content">
     <image class="logo" src="/static/logo.png" />
     <view class="text-area">
-      <text class="title">{{ title }}</text>
+      <text class="title text-primary">{{ title }}</text>
       <u-button type="primary">按钮</u-button>
       <u-input />
 
@@ -20,7 +20,7 @@ definePage({
 const title = ref('Hello')
 </script>
 
-<style>
+<style lang="scss">
 .content {
   display: flex;
   flex-direction: column;
@@ -44,6 +44,6 @@ const title = ref('Hello')
 
 .title {
   font-size: 36rpx;
-  color: #8f8f94;
+  color: $uni-color-error;
 }
 </style>
